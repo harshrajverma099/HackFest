@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Buddha Institute of Technology Hackathon Group</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      .page-header { text-align: center; padding: 42px 0 12px; }
+      .page-header h1 { margin: 0; font-size: clamp(24px, 5vw, 40px); }
+      .page-subtitle { color: var(--muted); text-align: center; margin-bottom: 24px; }
+      .group-container { width: min(900px, 92%); margin: 0 auto; }
+      .back-link { display: inline-block; margin-top: 16px; color: var(--accent); text-decoration: none; }
+      .back-link:hover { text-decoration: underline; }
+    </style>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav">
+        <div class="logo">Hack<span>Fest</span></div>
+        <nav>
+          <a href="index.html#about">About</a>
+          <a href="index.html#schedule">Schedule</a>
+          <a href="index.html#prizes">Prizes</a>
+          <a href="index.html#find-group">Find Group</a>
+          <a href="index.html#register" class="btn btn-primary">Register</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <div class="page-header">
+        <h1>Buddha Institute of Technology Hackathon Group</h1>
+        <p class="page-subtitle">Access time: <span id="accessTime"></span></p>
+      </div>
+      <div class="group-container">
+        <div class="card">
+          <div class="event-info">
+            <p><strong>Event Date:</strong> October 4, 2024</p>
+            <p><strong>Event Time:</strong> 10:00 AM</p>
+            <p><strong>Location:</strong> LJ Campus, LJ University Rd, off Sarkhej - Gandhinagar Highway, Makarba, Ahmedabad, Sarkhej-Okaf, Gujarat 382210</p>
+          </div>
+          <div class="team-members">
+            <h3>Team Members</h3>
+            <ol>
+              <li>Ayan Ansari — B.Tech 2nd year</li>
+              <li>Aryan Pandey — B.Tech 3rd year</li>
+              <li class="group-leader"><strong>Harsh Raj Verma — B.Tech 1st year (GROUP LEADER)</strong></li>
+              <li>Vishal Mishra — B.Tech 3rd year</li>
+            </ol>
+          </div>
+          <div class="attendance-warning">
+            <p><strong>⚠️ IMPORTANT:</strong> You must attend on October 4 at 10:00 AM. Don't come, your team will be disqualified.</p>
+          </div>
+          <a class="back-link" href="index.html#find-group">← Go back</a>
+        </div>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>© <span id="year"></span> HackFest</p>
+      </div>
+    </footer>
+
+    <script>
+      // Show access timestamp and current year
+      (function(){
+        const dt = new Date();
+        const opts = { year: 'numeric', month: 'long', day: 'numeric', hour: '2-digit', minute: '2-digit' };
+        document.getElementById('accessTime').textContent = dt.toLocaleString(undefined, opts);
+        document.getElementById('year').textContent = String(dt.getFullYear());
+      })();
+    </script>
+  </body>
+  </html>
+
+

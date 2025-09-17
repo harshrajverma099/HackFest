@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Join our Hackathon on October 4! Build, learn, and connect." />
+    <title>October 4 Hackathon</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav">
+        <div class="logo">Hack<span>Fest</span></div>
+        <nav>
+          <a href="#about">About</a>
+          <a href="#schedule">Schedule</a>
+          <a href="#prizes">Prizes</a>
+          <a href="#find-group">Find Group</a>
+          <a href="#faq">FAQ</a>
+          <a href="#register" class="btn btn-primary">Register</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-inner">
+          <h1>Hackathon • October 4</h1>
+          <p class="subtitle">Build something remarkable in 24 hours. Collaborate, learn, and ship.</p>
+
+          <div class="countdown" aria-live="polite">
+            <div class="countdown-item"><span id="days">0</span><label>Days</label></div>
+            <div class="countdown-item"><span id="hours">0</span><label>Hours</label></div>
+            <div class="countdown-item"><span id="minutes">0</span><label>Minutes</label></div>
+            <div class="countdown-item"><span id="seconds">0</span><label>Seconds</label></div>
+          </div>
+
+          <a id="register" class="btn btn-accent" href="#registration">Reserve your spot</a>
+        </div>
+        <div class="hero-bg" aria-hidden="true"></div>
+      </section>
+
+      <section id="about" class="section">
+        <div class="container grid-2">
+          <div>
+            <h2>About the Event</h2>
+            <p>
+              Join developers, designers, and makers for a high‑energy hackathon on October 4.
+              Bring your ideas, form teams, and turn concepts into products in just 24 hours.
+            </p>
+            <ul class="features">
+              <li>Workshops and mentoring</li>
+              <li>Free food, swag, and cloud credits</li>
+              <li>Beginner‑friendly and inclusive</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>Event Details</h3>
+            <ul class="details">
+              <li><strong>Date:</strong> October 4</li>
+              <li><strong>Time:</strong> 10:00 AM</li>
+              <li><strong>Location:</strong> LJ Campus, LJ University Rd, off Sarkhej - Gandhinagar Highway, Makarba, Ahmedabad, Sarkhej-Okaf, Gujarat 382210</li>
+              <li><strong>Format:</strong> In‑person + Virtual</li>
+              <li><strong>Duration:</strong> 24 hours</li>
+              <li><strong>Team Size:</strong> 1‑5 participants</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="schedule" class="section alt">
+        <div class="container">
+          <h2>Schedule</h2>
+          <div class="timeline">
+            <div class="timecard"><span>09:00</span><p>Check‑in & breakfast</p></div>
+            <div class="timecard"><span>10:00</span><p>Opening ceremony & team formation</p></div>
+            <div class="timecard"><span>11:00</span><p>Hacking begins</p></div>
+            <div class="timecard"><span>18:00</span><p>Workshops & mentor sessions</p></div>
+            <div class="timecard"><span>22:00</span><p>Midnight snack</p></div>
+            <div class="timecard"><span>10:00 (+1)</span><p>Project submissions due</p></div>
+            <div class="timecard"><span>12:00 (+1)</span><p>Demos & judging</p></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="prizes" class="section">
+        <div class="container grid-3">
+          <div class="prize card">
+            <h3>Grand Prize</h3>
+            <p>$2,000 + accelerator intro + trophy</p>
+          </div>
+          <div class="prize card">
+            <h3>2nd Place</h3>
+            <p>$1,000 + sponsor swag</p>
+          </div>
+          <div class="prize card">
+            <h3>Best Beginner</h3>
+            <p>$500 + mentorship sessions</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="registration" class="section alt">
+        <div class="container">
+          <h2>Register</h2>
+          <form class="register-form" action="#" method="post" onsubmit="return false;">
+            <div class="form-row">
+              <label for="name">Full Name</label>
+              <input id="name" name="name" type="text" placeholder="Alex Johnson" required />
+            </div>
+            <div class="form-row">
+              <label for="college">College</label>
+              <select id="college" name="college" required>
+                <option value="" disabled selected>Select your college</option>
+                <option value="my">My College</option>
+                <option>Adamas University — West Bengal</option>
+                <option>Amity University – multiple campuses (e.g. Noida, Mumbai, etc.)</option>
+                <option>Arka Jain University — Jamshedpur, Jharkhand</option>
+                <option>Babu Banarasi Das University — Uttar Pradesh</option>
+                <option>Bennett University — Noida, Uttar Pradesh</option>
+                <option>Bharatiya Engineering Science and Technology Innovation University — Andhra Pradesh</option>
+                <option>Brainware University — West Bengal</option>
+                <option>Buddha Institute of Technology</option>
+                <option>Centurion University of Technology and Management — Andhra Pradesh</option>
+                <option>Dev Sanakrit Vishwavidyalaya — Uttarakhand</option>
+                <option>DIT University — Dehradun, Uttarakhand</option>
+                <option>Era University — Uttar Pradesh</option>
+                <option>GLA University — Mathura, Uttar Pradesh</option>
+                <option>Graphic Era Hill University — Dehradun, Uttarakhand</option>
+                <option>IMS Unison University — Uttarakhand</option>
+                <option>Indira Gandhi Technological and Medical Sciences University — Ziro, Arunachal Pradesh</option>
+                <option>Jharkhand Rai University — Ranchi, Jharkhand</option>
+                <option>Jigyasa University (formerly Himgiri Zee University) — Dehradun, Uttarakhand</option>
+                <option>JIS University — West Bengal</option>
+                <option>KREA University — Andhra Pradesh</option>
+                <option>Maharishi University of Management and Technology — Bilaspur, Chhattisgarh</option>
+                <option>Mohan Babu University — Andhra Pradesh</option>
+                <option>Saveetha Amaravati University — Andhra Pradesh</option>
+                <option>Seacom Skills University — West Bengal</option>
+                <option>SRM University, Neerukonda — Andhra Pradesh</option>
+                <option>The Apollo University — Andhra Pradesh</option>
+                <option>University of Engineering & Management — Rajasthan</option>
+                <option>University of Engineering & Management — West Bengal</option>
+                <option>University of Petroleum and Energy Studies — Uttarakhand</option>
+                <option>University of Science & Technology, Meghalaya — Meghalaya</option>
+                <option>VIT-AP University — Andhra Pradesh</option>
+              </select>
+            </div>
+            <div class="form-row">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" placeholder="Enter your email" required />
+            </div>
+            <div class="form-row">
+              <label for="team">Team Name (optional)</label>
+              <input id="team" name="team" type="text" placeholder="Night Coders" />
+            </div>
+            <div class="form-row" id="passwordRow" hidden>
+              <label for="password">Password (My College only)</label>
+              <input id="password" name="password" type="password" placeholder="Enter your password" />
+            </div>
+            <button class="btn btn-primary" id="registerSubmit">Join the Hackathon</button>
+            <p id="formStatus" role="status" aria-live="polite" class="form-status" hidden></p>
+          </form>
+          <div class="card" id="teamList" hidden>
+            <h3>Team Members</h3>
+            <ol>
+              <li>Ayan Ansari — B.Tech 2nd year</li>
+              <li>Aryan Pandey — B.Tech 3rd year</li>
+              <li>Harsh Raj Verma — B.Tech 1st year (Group Leader)</li>
+              <li>Vishal Mishra — B.Tech 3rd year</li>
+            </ol>
+          </div>
+        </div>
+      </section>
+
+      <section id="find-group" class="section alt">
+        <div class="container">
+          <h2>Find Your Group</h2>
+          <p class="section-subtitle">Enter your credentials to view your team details and attendance information.</p>
+          
+          <form class="find-group-form" action="#" method="post">
+            <div class="form-row">
+              <label for="findEmail">Email</label>
+              <input id="findEmail" name="findEmail" type="email" placeholder="Enter your email" required />
+            </div>
+            <div class="form-row">
+              <label for="findPassword">Password</label>
+              <input id="findPassword" name="findPassword" type="password" placeholder="Enter your password" required />
+            </div>
+            <div class="form-row">
+              <label for="findCollege">College</label>
+              <select id="findCollege" name="findCollege" required>
+                <option value="" disabled selected>Select your college</option>
+                <option value="Buddha Institute of Technology">Buddha Institute of Technology</option>
+                <option>Adamas University — West Bengal</option>
+                <option>Amity University – multiple campuses (e.g. Noida, Mumbai, etc.)</option>
+                <option>Arka Jain University — Jamshedpur, Jharkhand</option>
+                <option>Babu Banarasi Das University — Uttar Pradesh</option>
+                <option>Bennett University — Noida, Uttar Pradesh</option>
+                <option>Bharatiya Engineering Science and Technology Innovation University — Andhra Pradesh</option>
+                <option>Brainware University — West Bengal</option>
+                <option>Centurion University of Technology and Management — Andhra Pradesh</option>
+                <option>Dev Sanakrit Vishwavidyalaya — Uttarakhand</option>
+                <option>DIT University — Dehradun, Uttarakhand</option>
+                <option>Era University — Uttar Pradesh</option>
+                <option>GLA University — Mathura, Uttar Pradesh</option>
+                <option>Graphic Era Hill University — Dehradun, Uttarakhand</option>
+                <option>IMS Unison University — Uttarakhand</option>
+                <option>Indira Gandhi Technological and Medical Sciences University — Ziro, Arunachal Pradesh</option>
+                <option>Jharkhand Rai University — Ranchi, Jharkhand</option>
+                <option>Jigyasa University (formerly Himgiri Zee University) — Dehradun, Uttarakhand</option>
+                <option>JIS University — West Bengal</option>
+                <option>KREA University — Andhra Pradesh</option>
+                <option>Maharishi University of Management and Technology — Bilaspur, Chhattisgarh</option>
+                <option>Mohan Babu University — Andhra Pradesh</option>
+                <option>Saveetha Amaravati University — Andhra Pradesh</option>
+                <option>Seacom Skills University — West Bengal</option>
+                <option>SRM University, Neerukonda — Andhra Pradesh</option>
+                <option>The Apollo University — Andhra Pradesh</option>
+                <option>University of Engineering & Management — Rajasthan</option>
+                <option>University of Engineering & Management — West Bengal</option>
+                <option>University of Petroleum and Energy Studies — Uttarakhand</option>
+                <option>University of Science & Technology, Meghalaya — Meghalaya</option>
+                <option>VIT-AP University — Andhra Pradesh</option>
+              </select>
+            </div>
+            <button class="btn btn-primary" id="findGroupSubmit" type="button">Find My Group</button>
+            <p id="findGroupStatus" role="status" aria-live="polite" class="form-status" hidden></p>
+          </form>
+          
+          <div class="card" id="groupDetails" hidden>
+            <h3>Your Team Details</h3>
+            <p><strong>College:</strong> Buddha Institute of Technology</p>
+            <div class="event-info">
+              <p><strong>Event Date:</strong> October 4, 2024</p>
+              <p><strong>Event Time:</strong> 10:00 AM</p>
+              <p><strong>Location:</strong> LJ Campus, LJ University Rd, off Sarkhej - Gandhinagar Highway, Makarba, Ahmedabad, Sarkhej-Okaf, Gujarat 382210</p>
+            </div>
+            <div class="team-members">
+              <h4>Team Members:</h4>
+              <ol>
+                <li>Ayan Ansari — B.Tech 2nd year</li>
+                <li>Aryan Pandey — B.Tech 3rd year</li>
+                <li class="group-leader"><strong>Harsh Raj Verma — B.Tech 1st year (GROUP LEADER)</strong></li>
+                <li>Vishal Mishra — B.Tech 3rd year</li>
+              </ol>
+            </div>
+            <div class="attendance-warning">
+              <p><strong>⚠️ IMPORTANT:</strong> You must attend on October 4 at 10:00 AM. Don't come, your team will be disqualified.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="faq" class="section">
+        <div class="container faq">
+          <h2>FAQ</h2>
+          <details>
+            <summary>Who can participate?</summary>
+            <p>Anyone! Students, professionals, beginners—everyone is welcome.</p>
+          </details>
+          <details>
+            <summary>What should I bring?</summary>
+            <p>Laptop, charger, and enthusiasm. We'll provide Wi‑Fi, food, and power.</p>
+          </details>
+          <details>
+            <summary>Is there a participation fee?</summary>
+            <p>No, it's free to participate.</p>
+          </details>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>© <span id="year"></span> HackFest • See you on October 4 at 10:00 AM!</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+  </html>
+
+
